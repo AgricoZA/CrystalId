@@ -21,4 +21,6 @@ This should work without causing any collisions, provided that the shift to the 
 Care would have to be taken.
 Alternatively the most significant bit(s) can be used to version the IDs and prevent collisions.
 
-Todo: maybe return some CrystalId or Error instead of throwing exception when rate is exceeded.
+Todo: 
+ - maybe return some CrystalId or Error instead of throwing exception when rate is exceeded.
+ - Disallow passing in a date before the start of epoch
