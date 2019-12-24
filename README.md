@@ -1,5 +1,5 @@
 # CrystalId
-Minimalist Id generator inspired by Twitter Snowflake
+Minimalist Id generator inspired by Twitter Snowflake, implemented in F#.
 
 Caller must maintain state and pass into the generator.
 Caller passes in previous CrystalId as a seed, together with current time, and receives back a new CrystalId (or an exception).
