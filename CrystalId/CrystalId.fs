@@ -35,7 +35,7 @@ let nextId seed now =
       id = calculateId seed.sequenceBitCount seed.processBitCount seed.processNumber thisEpochOffsetSeconds thisSequenceNumber }
 
 
-let private example =
+let private exampleUse =
 
   let mutable CrystalId = {
     epochStartYear = 2019
@@ -43,7 +43,7 @@ let private example =
     processBitCount = 10
     processNumber = 1L
     maximumBorrowedIdCount = 4096L * 10L // allow system to borrow up to 10 seconds worth of IDs
-    epochOffsetSeconds = 0L // initial value
+    epochOffsetSeconds = 0L
     sequenceNumber = 0L
     id = 0L
   }
