@@ -3,11 +3,13 @@
 open System
 
 type CrystalId = {
+  // config
   epochStartYear : int ;
   sequenceBitCount : int;
   processBitCount : int;
   processNumber : int64;
   maximumBorrowedIdCount : int64
+  // state
   epochOffsetSeconds : int64;
   sequenceNumber : int64;
   id : int64;
@@ -53,5 +55,3 @@ let private exampleUse =
 
   CrystalId <- nextId CrystalId (DateTime.UtcNow);
   printfn "%A" CrystalId
-
-
